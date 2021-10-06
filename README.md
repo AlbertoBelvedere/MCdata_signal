@@ -9,10 +9,20 @@ to study the low-pt electrons introduces any bias in the distribution of the low
 
 **jpsi_splot.C** exploit the splot technique to unfold signal and background contribution to the distribution of the ee invariant mass trough the fit of a double Crystal Ball. This function is implemented trough **RooDoubleCB.cc** and **RooDoubleCB.h** . Once the events of signal and background are known the MC data comparison for the signal component of the low-pt electron identification algorithm output is performed.
 
-To compile **ntuplaSig.h** or any other script in this directory:
+To compile **ntuplaSig.h**,  **MCntupla.C** or **MCntupla2.C**:
 
 ```
 g++ -c ntuplaSig.h `$ROOTSYS/bin/root-config --libs --cflags`
 g++ -o ntuplaSig.exe ntuplaSig.cpp ntuplaSig.C `$ROOTSYS/bin/root-config --libs --cflags`
 ./ntuplaSig.exe name_of_the_ntupla
+```
+
+It is possible to compile **jpsi_splot.C** directly by ROOT:
+
+```
+root
+.L RooDoubleCB.h++
+.L RooDoubleCB.cc++
+.L jpsi_splot.C++
+jpsi_splot()
 ```
