@@ -11,6 +11,6 @@ to study the low-pt electrons introduces any bias in the distribution of the low
 
 To compile **ntuplaSig.h** or any other script in this directory:
 
-g++ -c ntuplaSig.h `$ROOTSYS/bin/root-config --libs --cflags`
-g++ -o ntuplaSig.exe ntuplaSig.cpp ntuplaSig.C `$ROOTSYS/bin/root-config --libs --cflags`
+g++ -c ntuplaSig.h `$ROOTSYS/bin/root-config --libs --cflags`<br/>
+g++ -o ntuplaSig.exe ntuplaSig.cpp ntuplaSig.C `$ROOTSYS/bin/root-config --libs --cflags`<br/>
 ./ntuplaSig.exe name_of_the_ntupla
