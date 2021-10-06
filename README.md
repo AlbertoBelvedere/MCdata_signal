@@ -17,7 +17,7 @@ g++ -o ntuplaSig.exe ntuplaSig.cpp ntuplaSig.C `$ROOTSYS/bin/root-config --libs 
 ./ntuplaSig.exe name_of_the_ntupla
 ```
 
-It is possible to compile **jpsi_splot.C** directly by ROOT:
+To compile **jpsi_splot.C** :
 
 ```
 root
